@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="__HgZ4Dr1Eeu9LIQ0bjgWjA" label="LabReferencePro" description="Lab reference project" language="java" technicalLabel="LABREFERENCEPRO" creationDate="2020-12-10T11:30:40.147+0100" author="__HgZ4Tr1Eeu9LIQ0bjgWjA" productVersion="Talend Data Integration-7.3.1.20200219_1130" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/ftao-talend/git-training&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" bigData="false">
+    <migrationTask xmi:id="__Hl5cDr1Eeu9LIQ0bjgWjA" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="__HgZ4Tr1Eeu9LIQ0bjgWjA" login="admin@talend.com" firstName="admin" lastName="admin" type="DI" additionnalData="{}"/>
+</xmi:XMI>
