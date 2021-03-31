@@ -12,6 +12,10 @@
     <module>code/beans</module>
     <module>code/routines</module>
     <module>jobs/process/BuildingJobs/printcustomers_0.1</module>
+    <module>jobs/process/ExecutionControl/filesstaging_0.1</module>
+    <module>jobs/process/ExecutionControl/listdirectory_0.1</module>
+    <module>jobs/process/ExecutionControl/masterjob_0.1</module>
+    <module>jobs/process/ExecutionControl/processdirectory_0.1</module>
     <module>jobs/process/ProcessingData/filterdata_0.1</module>
     <module>jobs/process/ProcessingData/joindatarejects_0.1</module>
     <module>jobs/process/ProcessingData/mapdata_0.1</module>
