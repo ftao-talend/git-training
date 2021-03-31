@@ -11,6 +11,10 @@
   <modules>
     <module>code/beans</module>
     <module>code/routines</module>
+    <module>jobs/process/ProcessingData/filterdata_0.1</module>
+    <module>jobs/process/ProcessingData/joindatarejects_0.1</module>
+    <module>jobs/process/ProcessingData/mapdata_0.1</module>
+    <module>jobs/process/ProcessingData/processdata_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
