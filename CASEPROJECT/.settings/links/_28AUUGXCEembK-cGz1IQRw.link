@@ -1,0 +1,29 @@
+{
+  "itemId" : "_28AUUGXCEembK-cGz1IQRw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_6PoBMGXCEembK-cGz1IQRw",
+    "parameterList" : [ {
+      "id" : "_DD9AUfPbEem8-sEjO0oeYA",
+      "name" : "DBC_WDM_POSTSTG_Password"
+    }, {
+      "id" : "_DD9AUvPbEem8-sEjO0oeYA",
+      "name" : "DBC_WDM_POSTSTG_Schema"
+    }, {
+      "id" : "_DD9AU_PbEem8-sEjO0oeYA",
+      "name" : "DBC_WDM_POSTSTG_Server"
+    }, {
+      "id" : "_DD9AVPPbEem8-sEjO0oeYA",
+      "name" : "DBC_WDM_POSTSTG_Port"
+    }, {
+      "id" : "_DD9AVfPbEem8-sEjO0oeYA",
+      "name" : "DBC_WDM_POSTSTG_ServiceName"
+    }, {
+      "id" : "_DD9AVvPbEem8-sEjO0oeYA",
+      "name" : "DBC_WDM_POSTSTG_AdditionalParams"
+    }, {
+      "id" : "_DD9AV_PbEem8-sEjO0oeYA",
+      "name" : "DBC_WDM_POSTSTG_Login"
+    } ]
+  } ]
+}
