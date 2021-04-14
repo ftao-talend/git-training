@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:version="2.0">
+  <TalendMetadata:DatabaseConnection AdditionalParams="context.DBC_WDM_LAND_AdditionalParams" ContextId="_p4I1YGXCEembK-cGz1IQRw" ContextMode="true" DatabaseType="Oracle with service name" DatasourceName="" DbmsId="oracle_id" DriverClass="oracle.jdbc.OracleDriver" FileFieldName="" Password="context.DBC_WDM_LAND_Password" Port="context.DBC_WDM_LAND_Port" ProductId="ORACLE" SID="context.DBC_WDM_LAND_ServiceName" SQLMode="false" ServerName="context.DBC_WDM_LAND_Server" SqlSynthax="SQL Syntax" StandardSQL="true" URL="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=vlbssqd881.at.inside)(port=2329))(connect_data=(service_name=WDMDEV)))" UiSchema="context.DBC_WDM_LAND_Schema" Username="context.DBC_WDM_LAND_Login" contextName="Default" dataPackage="_qpFKIGXCEembK-cGz1IQRw" dbVersionString="ORACLE_12" id="_nVeEUGXCEembK-cGz1IQRw" label="DBC_WDM_LAND" name="DBC_WDM_LAND" xmi:id="_nVw_QWXCEembK-cGz1IQRw">
+    <taggedValue tag="Is Conn Need Reload" value="true" xmi:id="_kXkqEQDzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="package filter" value="" xmi:id="_kYKf8ADzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="Status" value="" xmi:id="_kYKf8QDzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="Version" value="0.1" xmi:id="_kYKf8gDzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="Purpose" value="" xmi:id="_kYKf8wDzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="Description" value="" xmi:id="_kYKf9ADzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="Author" value="" xmi:id="_kYKf9QDzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="otherParameter" xmi:id="_kYKf9gDzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="DB ProductName" value="Oracle" xmi:id="_kZNo0ADzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="DB ProductVersion" value="Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production&#10;With the Partitioning option" xmi:id="_kZNo0QDzEeigQdUL9Y2uNA"/>
+    <taggedValue tag="DB IdentifierQuoteString" value="&quot;" xmi:id="_kZNo0gDzEeigQdUL9Y2uNA"/>
+    <parameters key="CONN_PARA_KEY_USERNAME" value="context.DBC_WDM_LAND_Login" xmi:id="_kXkqEgDzEeigQdUL9Y2uNA"/>
+    <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_o2RC8ADzEeigQdUL9Y2uNA"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema dataManager="_nVw_QWXCEembK-cGz1IQRw" name="WDM_LAND" xmi:id="_qpFKIGXCEembK-cGz1IQRw"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bbd17b39-0c62-4b6d-beb9-3f5f5fb3c7d4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Iu+mQiUt/3v21bH+zTC1KqbM4S8XzpD1ghLfYXNxnxQRCW0Tfwd3yOOTkiB3KpwUy9qY0y8AjTes
+E11NslKOGA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e5c80cd2-458e-4416-ba4a-c3d765d18827"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RKJjvnN7PPAt15NhURB4uaUMxrwOotUk2Z+puFHOFF4wuvoSKZW3gUDH3h581zA+j6/Pch8bVrre
+8oGRDbO6kQ==</DigestValue></Reference></SignedInfo><SignatureValue>dyctDSffw/+QTKmdmpt1FXDU2PZVcyEom8rTdkwAuAOzzkswtH5uLNglT/at2q8a0QpxHaxUGcxa
+qlZDD07hZLAA5hHRQmxHOjLobh//UBgH8A7x4gY/XrcqxjWGVp/U75tL475rRZ1sOZpG3im6Bw4H
+/5d7EdvjprP3bKX0P6q4LL4nEftITon3uS8Tn4IABpOT5ycR02ID0yNBGSVdbCTEIoN0SPIFbeHm
+h7pO38hKSkUxQyXSW0d9vMPGaPRyNGjf1ICUnDhqePIQxX3OGyLqLcawEblHyqN6wnqHh62vTpo+
+cAYAY65H6yg/VNah84Popxq24jxj3eej+zALFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e5c80cd2-458e-4416-ba4a-c3d765d18827" Target="#_bbd17b39-0c62-4b6d-beb9-3f5f5fb3c7d4"><Timestamp>2021-04-14 14:07:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
