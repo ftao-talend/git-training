@@ -11,13 +11,23 @@
   <modules>
     <module>code/beans</module>
     <module>code/routines</module>
+    <module>jobs/process/BuildingJobs/printcustomers_0.1</module>
+    <module>jobs/process/CASES/new_test_0.1</module>
+    <module>jobs/process/ExecutionControl/filesstaging_0.1</module>
+    <module>jobs/process/ExecutionControl/listdirectory_0.1</module>
+    <module>jobs/process/ExecutionControl/masterjob_0.1</module>
+    <module>jobs/process/ExecutionControl/processdirectory_0.1</module>
+    <module>jobs/process/ProcessingData/filterdata_0.1</module>
+    <module>jobs/process/ProcessingData/joindatarejects_0.1</module>
+    <module>jobs/process/ProcessingData/mapdata_0.1</module>
+    <module>jobs/process/ProcessingData/processdata_0.1</module>
   </modules>
   <properties>
-    <signer.version>7.3.1</signer.version>
     <talend.project.name>CASEPROJECT</talend.project.name>
+    <signer.version>7.3.1</signer.version>
     <encoding>UTF-8</encoding>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
