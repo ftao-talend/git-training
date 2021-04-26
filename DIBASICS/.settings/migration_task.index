@@ -1,5 +1,15 @@
 {
   "migrationTask" : [ {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansDefaultLibrariesMigrationTask.7.3.1-R2021-03",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.camel.designer.migration.UpdateBeansLibrariesMigrationTask.7.3.1",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.core.migration.ItemSaveTriggerWholeDoc",
     "breaks" : "7.0.0",
     "version" : "7.0.0",
@@ -95,6 +105,11 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.designer.docker.migrationtask.UpdateJobPomPropertiesMigrationTask",
+    "breaks" : "7.0.1",
+    "version" : "7.0.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.designer.esb.webservice.ConsumerFaultResponseMigrationTask",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
@@ -118,6 +133,16 @@
     "id" : "org.talend.designer.maven.ui.ConfigMavenRepositoryRemove",
     "breaks" : "6.0.1",
     "version" : "6.0.2",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.designer.spark.repository.migration.UpdateDatabricks73Version",
+    "breaks" : "7.3.1",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.designer.spark.repository.migration.UpdateRemovedHadoopVersion",
+    "breaks" : "7.3.1",
+    "version" : "7.3.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.designer.xmlmap.migration.TXMLMapChangeAllInOneValueMigrationTask",
@@ -184,6 +209,11 @@
     "breaks" : "6.2.1",
     "version" : "6.2.1",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.hadoopcluster.model.migration.MoveHDFSAndHCatalogToHadoopFolderMigrationTask",
+    "breaks" : "5.3.0",
+    "version" : "5.3.0",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.json.migrations.JsonPathMigrationTask",
     "breaks" : "6.0.0",
@@ -1149,11 +1179,6 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
-    "id" : "org.talend.repository.model.migration.FixProjectResourceLink",
-    "breaks" : "5.1.1",
-    "version" : "5.1.2",
-    "status" : "noimpact"
-  }, {
     "id" : "org.talend.repository.model.migration.FixUnevenItemContextParametersMigrationTask",
     "breaks" : "6.1.0",
     "version" : "6.4.0",
@@ -1162,11 +1187,6 @@
     "id" : "org.talend.repository.model.migration.FixWrongDbTypesMigrationTask",
     "breaks" : "5.1.9",
     "version" : "5.1.2",
-    "status" : "noimpact"
-  }, {
-    "id" : "org.talend.repository.model.migration.GenerateJobPomMigrationTask",
-    "breaks" : "7.0.1",
-    "version" : "7.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.HandleOracleSchemaMigrationTask",
@@ -1318,6 +1338,11 @@
     "version" : "5.4.0",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.RemoveMetadataInPomsFolder",
+    "breaks" : "7.3.1",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.repository.model.migration.RemovePigudfModulesMigrationTask",
     "breaks" : "7.3.0",
     "version" : "7.3.1",
@@ -1336,6 +1361,11 @@
     "id" : "org.talend.repository.model.migration.RemoveRoutineJarDependencyTask",
     "breaks" : "5.4.1",
     "version" : "5.4.2",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.RemoveSnapshotJarMigrationTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.RemoveSpaceInJobNameMigrationTask",
@@ -1742,6 +1772,11 @@
     "version" : "6.5.0",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.UpdateDaikonCryptoUtilsMigrationTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.repository.model.migration.UpdateDbVersionForVerticaMigrationTask",
     "breaks" : "5.4.1",
     "version" : "5.4.3",
@@ -1875,9 +1910,19 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.spark.AddKafkaExtraInfo",
+    "breaks" : "7.3.1",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.repository.model.migration.spark.ChangeLocalModeForSparkConfiguration",
     "breaks" : "6.0.0",
     "version" : "6.1.0",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.spark.RefactoDeltaMergeOption",
+    "breaks" : "7.3.1",
+    "version" : "7.3.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.spark.RenameSparkVersions",
