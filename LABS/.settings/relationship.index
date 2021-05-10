@@ -20,4 +20,119 @@
     "version" : "Latest",
     "type" : "property"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_bezIYC7tEeaAsfuXJAvVUw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_CqTaYMkdEeenr6lCJr-8MA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_liP3sGr5Eeezu6jBqsUVSQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_xGIeoGboEeeDy6-3OHCzLg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "BerriDataGenerator",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Caisses",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CustomNumeric",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DQTechnical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataMasking",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQuality",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQualityDependencies",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Dates",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DqStringHandling",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ESBTransformation",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ESBUtilRoutine",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ExecutionRedressementWSResponseV01",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ExecutionRedressementsWS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "GestionRIB",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "GestionSEPA",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "GestionSEPA2",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "GestionString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TaxaRoutine",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "TraitementLao",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "protectStrings",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "testChamps",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
 } ]

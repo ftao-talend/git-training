@@ -1,0 +1,94 @@
+package routines;
+
+
+public class testChamps {
+
+	/**
+	 * teste la longueur des chaines de caractères
+	 * @param chaine
+	 * @param longueur
+	 * @return
+	 */
+    public static boolean testString(String chaine, int longueur) {
+    	if (chaine != null && chaine.length() > longueur)
+    		return false; 
+    	
+    	else 
+    		return true; 
+
+    }
+    
+    /**
+     * teste la validité des dates
+     * @param date
+     * @param dateFormat
+     * @return
+     */
+    public static boolean testDate(String date, String dateFormat) {
+    	if (date != null && ! TalendDate.isDate(date, dateFormat))
+    		return false; 
+    	
+    	else 
+    		return true; 
+
+    }
+    
+    /**
+     * teste les entiers
+     * @param entier
+     * @return
+     */
+    public static boolean testInt(String entier) {
+    	if (entier == null || "".equals(entier.trim()) || entier.trim().matches("^[+-]?[0-9]+$"))
+    		return true; 
+    	
+    	else 
+    		return false; 
+
+    }
+    
+    /**
+     * teste les décimaux
+     * @param entier
+     * @return
+     */
+    public static boolean testDecimal(String decimal) {
+    	if (decimal == null || "".equals(decimal.trim()) || testInt(decimal) || decimal.trim().matches("^[+-]?[0-9]+\\.[0-9]+$"))
+    		return true; 
+    	
+    	else 
+    		return false; 
+
+    }
+    
+    /**
+     * teste la champ Dim2
+     * @param dim2
+     * @return
+     */
+    public static boolean testDim2(String dim2) {
+    	if (dim2 == null || "".equals(dim2.trim()) || ("TCOT".equals(dim2.trim()) || "TECH".equals(dim2.trim()) || "TCX".equals(dim2.trim()) ))
+    		return true; 
+    	
+    	
+    	else 
+    		return false; 
+
+    }
+    
+    /**
+     * teste la champ Dim3
+     * @param dim2
+     * @return
+     */
+    public static boolean testDim3(String dim3) {
+    	if (dim3 == null || "".equals(dim3.trim()) || ("0".equals(dim3.trim()) || "1".equals(dim3.trim()) || "2".equals(dim3.trim()) || "3".equals(dim3.trim()) || "4".equals(dim3.trim()) || "5".equals(dim3.trim()) || "6".equals(dim3.trim()) || "7".equals(dim3.trim())))
+    		return true; 
+    	
+    	
+    	else 
+    		return false; 
+
+    }
+    
+}

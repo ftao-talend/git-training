@@ -11,6 +11,7 @@
   <modules>
     <module>code/beans</module>
     <module>code/routines</module>
+    <module>jobs/process/Travail_SHE/attente/ribram_0.1</module>
     <module>jobs/process/amc_0.1</module>
     <module>jobs/process/createamctables_0.1</module>
     <module>jobs/process/demo_0.1</module>

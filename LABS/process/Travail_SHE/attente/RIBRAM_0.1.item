@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="PREPROD" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" internalId="_8aGec7H7Eeqgh7B2LHizrg" name="Var_DEST_MAIL" prompt="Var_DEST_MAIL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_84B-gKi6EeuOs6fkouIBsA" name="Ctx_Fichier_conf_Encoding" prompt="Ctx_Fichier_conf_Encoding?" promptNeeded="false" repositoryContextId="_liP3sGr5Eeezu6jBqsUVSQ" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="_84B-gai6EeuOs6fkouIBsA" name="Ctx_Fichier_conf_FieldSeparator" prompt="Ctx_Fichier_conf_FieldSeparator?" promptNeeded="false" repositoryContextId="_liP3sGr5Eeezu6jBqsUVSQ" type="id_String" value="&quot;=&quot;"/>
+    <contextParameter comment="" internalId="_84B-gqi6EeuOs6fkouIBsA" name="Ctx_Fichier_conf_File" prompt="Ctx_Fichier_conf_File?" promptNeeded="false" repositoryContextId="_liP3sGr5Eeezu6jBqsUVSQ" type="id_File" value="/Production/Exploit/Conf/talend_context_commun.conf"/>
+    <contextParameter comment="" internalId="_84B-g6i6EeuOs6fkouIBsA" name="Ctx_Fichier_conf_RowSeparator" prompt="Ctx_Fichier_conf_RowSeparator?" promptNeeded="false" repositoryContextId="_liP3sGr5Eeezu6jBqsUVSQ" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="_84CllKi6EeuOs6fkouIBsA" name="Ctx_Mail_Port" prompt="Ctx_Mail_Port?" promptNeeded="false" repositoryContextId="_CqTaYMkdEeenr6lCJr-8MA" type="id_String" value="25"/>
+    <contextParameter comment="" internalId="_84Cllai6EeuOs6fkouIBsA" name="Ctx_Mail_Destinataire" prompt="Ctx_Mail_Destinataire?" promptNeeded="false" repositoryContextId="_CqTaYMkdEeenr6lCJr-8MA" type="id_String" value="exploitation@lacipav.fr;"/>
+    <contextParameter comment="" internalId="_84Cllqi6EeuOs6fkouIBsA" name="Ctx_Mail_Server_SMTP" prompt="Ctx_Mail_Server_SMTP?" promptNeeded="false" repositoryContextId="_CqTaYMkdEeenr6lCJr-8MA" type="id_String" value="CWMX01"/>
+    <contextParameter comment="" internalId="_84Cll6i6EeuOs6fkouIBsA" name="Ctx_Mail_Expediteur" prompt="Ctx_Mail_Expediteur?" promptNeeded="false" repositoryContextId="_CqTaYMkdEeenr6lCJr-8MA" type="id_String" value="exploitation@lacipav.fr"/>
+    <contextParameter comment="" internalId="_-DLe0KjBEeuOs6fkouIBsA" name="Ctx_Rep_Racine_LAO" prompt="Ctx_Rep_Racine_LAO?" promptNeeded="false" repositoryContextId="_xGIeoGboEeeDy6-3OHCzLg" type="id_String" value="/Production/Echange/Lao/"/>
+    <contextParameter comment="" internalId="_-DLe0ajBEeuOs6fkouIBsA" name="Ctx_Rep_Import" prompt="Ctx_Rep_Import?" promptNeeded="false" repositoryContextId="_xGIeoGboEeeDy6-3OHCzLg" type="id_String" value="Import/"/>
+    <contextParameter comment="" internalId="_4YVDwKjgEeuCwPOeLqqcuQ" name="Var_STAT_DIR" prompt="Var_STAT_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/mnt/services/STATISTIQUES/Responsables/Production/Quotidien/ToscaLiquidation/LAO_Suivi_Des_Demandes/IMPORT_DRIL/"/>
+    <contextParameter comment="" internalId="_IY-ywKvoEeuEm_YZ42Zevw" name="Var_File_NbLine" prompt="Var_File_NbLine?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+  </context>
+  <context confirmationNeeded="false" name="PREPROD">
+    <contextParameter comment="" internalId="_8aGed7H7Eeqgh7B2LHizrg" name="Var_DEST_MAIL" prompt="Var_DEST_MAIL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_84ClmKi6EeuOs6fkouIBsA" name="Ctx_Fichier_conf_Encoding" prompt="Ctx_Fichier_conf_Encoding?" promptNeeded="false" repositoryContextId="_liP3sGr5Eeezu6jBqsUVSQ" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" internalId="_84Clmai6EeuOs6fkouIBsA" name="Ctx_Fichier_conf_FieldSeparator" prompt="Ctx_Fichier_conf_FieldSeparator?" promptNeeded="false" repositoryContextId="_liP3sGr5Eeezu6jBqsUVSQ" type="id_String" value="&quot;=&quot;"/>
+    <contextParameter comment="" internalId="_84Clmqi6EeuOs6fkouIBsA" name="Ctx_Fichier_conf_File" prompt="Ctx_Fichier_conf_File?" promptNeeded="false" repositoryContextId="_liP3sGr5Eeezu6jBqsUVSQ" type="id_File" value="/Production/Exploit/Conf/talend_context_commun.conf"/>
+    <contextParameter comment="" internalId="_84Clm6i6EeuOs6fkouIBsA" name="Ctx_Fichier_conf_RowSeparator" prompt="Ctx_Fichier_conf_RowSeparator?" promptNeeded="false" repositoryContextId="_liP3sGr5Eeezu6jBqsUVSQ" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" internalId="_84CloKi6EeuOs6fkouIBsA" name="Ctx_Mail_Port" prompt="Ctx_Mail_Port?" promptNeeded="false" repositoryContextId="_CqTaYMkdEeenr6lCJr-8MA" type="id_String" value="25"/>
+    <contextParameter comment="" internalId="_84Cloai6EeuOs6fkouIBsA" name="Ctx_Mail_Destinataire" prompt="Ctx_Mail_Destinataire?" promptNeeded="false" repositoryContextId="_CqTaYMkdEeenr6lCJr-8MA" type="id_String" value="exploitation@lacipav.fr;"/>
+    <contextParameter comment="" internalId="_84Cloqi6EeuOs6fkouIBsA" name="Ctx_Mail_Server_SMTP" prompt="Ctx_Mail_Server_SMTP?" promptNeeded="false" repositoryContextId="_CqTaYMkdEeenr6lCJr-8MA" type="id_String" value="CWMX01"/>
+    <contextParameter comment="" internalId="_84Clo6i6EeuOs6fkouIBsA" name="Ctx_Mail_Expediteur" prompt="Ctx_Mail_Expediteur?" promptNeeded="false" repositoryContextId="_CqTaYMkdEeenr6lCJr-8MA" type="id_String" value="exploitation@lacipav.fr"/>
+    <contextParameter comment="" internalId="_-DLe0qjBEeuOs6fkouIBsA" name="Ctx_Rep_Racine_LAO" prompt="Ctx_Rep_Racine_LAO?" promptNeeded="false" repositoryContextId="_xGIeoGboEeeDy6-3OHCzLg" type="id_String" value="/Production/Echange/Lao/"/>
+    <contextParameter comment="" internalId="_-DLe06jBEeuOs6fkouIBsA" name="Ctx_Rep_Import" prompt="Ctx_Rep_Import?" promptNeeded="false" repositoryContextId="_xGIeoGboEeeDy6-3OHCzLg" type="id_String" value="Import/"/>
+    <contextParameter comment="" internalId="_4YVDwajgEeuCwPOeLqqcuQ" name="Var_STAT_DIR" prompt="Var_STAT_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/mnt/services/STATISTIQUES/Responsables/Production/Quotidien/ToscaLiquidation/LAO_Suivi_Des_Demandes/IMPORT_DRIL/TEST/"/>
+    <contextParameter comment="" internalId="_IY-ywavoEeuEm_YZ42Zevw" name="Var_File_NbLine" prompt="Var_File_NbLine?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="context.Ctx_Fichier_conf_File"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.Ctx_Fichier_conf_FieldSeparator"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:cliXObSCeo68m+4XTwwidBXv4d3ffXLpM81jJtYe"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Production/Studio/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:yrgy3g33VV+G+gjQt5Krmh3nW0sgmViR4hjknKxE"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_stBd8JUlEeqkkaR1H3GSEw" name="DQTechnical"/>
+    <routinesParameter id="_ssLJYJUlEeqkkaR1H3GSEw" name="DataMasking"/>
+    <routinesParameter id="_stKA0JUlEeqkkaR1H3GSEw" name="DataOperation"/>
+    <routinesParameter id="_ssujAJUlEeqkkaR1H3GSEw" name="DataQualityDependencies"/>
+    <routinesParameter id="_ssX9sJUlEeqkkaR1H3GSEw" name="DataQuality"/>
+    <routinesParameter id="_ss3s8JUlEeqkkaR1H3GSEw" name="DqStringHandling"/>
+    <routinesParameter id="_suh50JUlEeqkkaR1H3GSEw" name="MDM"/>
+    <routinesParameter id="_stTKwJUlEeqkkaR1H3GSEw" name="Mathematical"/>
+    <routinesParameter id="_sthNMJUlEeqkkaR1H3GSEw" name="Numeric"/>
+    <routinesParameter id="_stpwEJUlEeqkkaR1H3GSEw" name="Relational"/>
+    <routinesParameter id="_sg6UkJUlEeqkkaR1H3GSEw" name="SQLike"/>
+    <routinesParameter id="_sty6AJUlEeqkkaR1H3GSEw" name="StringHandling"/>
+    <routinesParameter id="_st8rAJUlEeqkkaR1H3GSEw" name="TalendDataGenerator"/>
+    <routinesParameter id="_suF08JUlEeqkkaR1H3GSEw" name="TalendDate"/>
+    <routinesParameter id="_suPl8JUlEeqkkaR1H3GSEw" name="TalendString"/>
+    <routinesParameter id="_iPOH0PVaEeOlU7UONXK4yQ" name="BerriDataGenerator"/>
+    <routinesParameter id="_2SkisGzzEeGvyLcn6hTZuw" name="Caisses"/>
+    <routinesParameter id="_HFhqoOmvEeCIA58kSlY4FA" name="CustomNumeric"/>
+    <routinesParameter id="_MrXMAB6tEee5TbZkflnClA" name="DataUtil"/>
+    <routinesParameter id="_ZJtw0JIlEeKfR6DnwwLJkw" name="Dates"/>
+    <routinesParameter id="__kFd8Cv4EeelgMtHwJzK2g" name="ESBTransformation"/>
+    <routinesParameter id="_Nny_UBudEee5TbZkflnClA" name="ESBUtilRoutine"/>
+    <routinesParameter id="_o169sIRmEd-x6Zc9tCAjFg" name="GestionRIB"/>
+    <routinesParameter id="_16M9wGBPEeSV-4sfA_uuQQ" name="GestionSEPA2"/>
+    <routinesParameter id="_KMTXMGEPEeS215_ZuMiTtg" name="GestionSEPA"/>
+    <routinesParameter id="_dkwygIRmEd-x6Zc9tCAjFg" name="GestionString"/>
+    <routinesParameter id="_midugISAEd-oh7q_wShAfA" name="TaxaRoutine"/>
+    <routinesParameter id="_1GmeEExHEeeZdemXZSSyKA" name="TraitementLao"/>
+    <routinesParameter id="_VoBe8OV0Eee2W58EP69zPA" name="protectStrings"/>
+    <routinesParameter id="_7qTkYOPhEeendMdiwfjZ1w" name="testChamps"/>
+    <routinesParameter id="_VES-ICM8Eeaji9COyh5C9A" name="ExecutionRedressementWSResponseV01"/>
+    <routinesParameter id="_SdGSYCM8Eeaji9COyh5C9A" name="ExecutionRedressementsWS"/>
+    <routinesParameter id="_suYv4JUlEeqkkaR1H3GSEw" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="TEXT" name="TO" value="context.Var_DEST_MAIL"/>
+    <elementParameter field="TEXT" name="FROM" value="context.Ctx_Mail_Expediteur"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" show="false" value="&quot;sender&quot;"/>
+    <elementParameter field="TEXT" name="CC" value="context.Ctx_Mail_Destinataire"/>
+    <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;[DGESDRIL][&quot; + contextStr + &quot;] Réception des données&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Bonjour,&lt;BR&gt;&#13;&#10;&lt;BR&gt;&#13;&#10;La réception de(s) fichier(s) vient de se terminer.&lt;BR&gt;&lt;BR&gt;&#13;&#10;&#13;&#10;Le fichier compotte &quot; + context.Var_File_NbLine + &quot; ligne(s).&lt;BR&gt;&#13;&#10;&lt;BR&gt;&#13;&#10;&lt;b style=\&quot;color:rgb(160,0,87)\&quot;&gt;Cordialement,&lt;BR&gt;&#13;&#10;&lt;b style=\&quot;color:rgb(0,160,194)\&quot;&gt;La Cellule Exploitation.&lt;/b&gt;&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.Ctx_Mail_Server_SMTP"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.Ctx_Mail_Port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:SkoqKXQNRcWogm29twviatTC+Lg/yJH7I3EfbSjMesc/6oUOC6w="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_22a5d993-0301-42e8-addb-95099d1da44a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZKC9YK/Cqw+oXzfOOABbij1zmbZmaBIso8GL3UZNojF2rFotTViuomrAs46PRCHEwghVZevexKou
+y0acdssJog==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fccf2acd-5a0f-43bf-801e-75baa5775a82"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dw4hB8x1UpKT9pW5sBKHVQptjRBl9tD3oyIhq7xC4U2/x6Zc2YSGuTZ84GCaA6+lk0Ft+TJseaFa
+D+T2YZe8+g==</DigestValue></Reference></SignedInfo><SignatureValue>EYMSgkG+mhdHd3dGWgvD1ZBqBb7+D4V6zLjSyGkKz3ggimyfqhphejAOuOdSour102FO3SD8eUj9
+aPp5PgWQaggQVZQMN1CB0kgRu5Y3muwBWpnH3BFPbSwXIzVLRvUA/m4sbOcaE4xNyAOicW/2ciaM
+rr+soccOsbz2bRtSPODgJbVqPpoCTLVxbhlQuvSe/UX0HU36m3Ouh0e+b0amt8bCY8laTAnbh2Nf
+J8TsYJkBCqXpVxrzSKJjE405Sda0EoVSLr2rB0L3JkBrtiNEYK7VLUFeA3V//bUcf9EKNF1dbBPN
+vgNp6wMXt8AgCPBFWrGpXLISQQfVsisEWJw4aA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fccf2acd-5a0f-43bf-801e-75baa5775a82" Target="#_22a5d993-0301-42e8-addb-95099d1da44a"><Timestamp>2021-05-10 16:38:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
