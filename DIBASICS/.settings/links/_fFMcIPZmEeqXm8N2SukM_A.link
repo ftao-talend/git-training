@@ -1,0 +1,36 @@
+{
+  "itemId" : "_fFMcIPZmEeqXm8N2SukM_A",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_liP3sGr5Eeezu6jBqsUVSQ",
+    "parameterList" : [ {
+      "id" : "_HzJ5Z6_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_Encoding"
+    }, {
+      "id" : "_HzJ5aa_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_FieldSeparator"
+    }, {
+      "id" : "_HzJ5Zq_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_File"
+    }, {
+      "id" : "_HzJ5aK_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_RowSeparator"
+    } ]
+  }, {
+    "contextName" : "RECETTE",
+    "repoId" : "_liP3sGr5Eeezu6jBqsUVSQ",
+    "parameterList" : [ {
+      "id" : "_HzJ5Yq_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_Encoding"
+    }, {
+      "id" : "_HzJ5ZK_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_FieldSeparator"
+    }, {
+      "id" : "_HzJ5Ya_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_File"
+    }, {
+      "id" : "_HzJ5Y6_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_RowSeparator"
+    } ]
+  } ]
+}

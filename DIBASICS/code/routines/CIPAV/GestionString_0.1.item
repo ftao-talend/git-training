@@ -1,0 +1,263 @@
+// template routine Java
+package routines;
+ 
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class GestionString {
+ 
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} sansAccent("Caractères accentués") # Caracteres accentues !.
+     */
+        public static String sansAccent(String mot)
+        {
+        if (mot!= null)
+        {
+         //      String chaineOK = "-azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN0123456789@+=,.:;_!/#'&()\" ";
+ 
+               mot = mot.replace("Ç", "C");
+               mot = mot.replaceAll("[ÀÁÂÃÄÅ]", "A");
+               mot = mot.replaceAll("[ÈÉÊË]", "E");
+               mot = mot.replaceAll("[ÌÍÎÏ]", "I");
+               mot = mot.replaceAll("[ÒÓÔÕÖ]", "O");
+               mot = mot.replaceAll("[ÙÚÛÜ]", "U");
+               mot = mot.replace("Ý", "Y");
+               mot = mot.replaceAll("[àáâãäå]", "a");
+               mot = mot.replace("ç", "c");
+               mot = mot.replaceAll("[èéêë]", "e");
+               mot = mot.replaceAll("[ìíîï]", "i");
+               mot = mot.replaceAll("[ðòóôõö]", "o");
+               mot = mot.replaceAll("[ùúûü]", "u");
+               mot = mot.replaceAll("[ýÿ]", "y");
+               
+        }
+        return mot;
+        }
+	
+	
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} supprAccent("Caractères accentués") # Caracteres accentues !.
+     */
+        public static String supprAccent(String mot)
+        {
+        if (mot!= null)
+        {
+               String chaineOK = "-azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN0123456789,.;/? ";
+ 
+               mot = mot.replaceAll("[ÀÁÂÃÄÅ]", "A");
+               mot = mot.replace("Ç", "C");
+               mot = mot.replaceAll("[ÈÉÊË]", "E");
+               mot = mot.replaceAll("[ÌÍÎÏ]", "I");
+               mot = mot.replaceAll("[ÒÓÔÕÖ]", "O");
+               mot = mot.replaceAll("[ÙÚÛÜ]", "U");
+               mot = mot.replace("Ý", "Y");
+               mot = mot.replaceAll("[àáâãäå]", "a");
+               mot = mot.replace("ç", "c");
+               mot = mot.replaceAll("[èéêë]", "e");
+               mot = mot.replaceAll("[ìíîï]", "i");
+               mot = mot.replaceAll("[ðòóôõö]", "o");
+               mot = mot.replaceAll("[ùúûü]", "u");
+               mot = mot.replaceAll("[ýÿ]", "y");
+           //    mot = mot.replace(" - ", "-");
+           //    mot = mot.replace(" -", "-");
+           //    mot = mot.replace("- ", "-");
+        
+               // mot = mot.replaceAll("[_'-/]", " ");
+           //    mot = mot.replaceAll("[_'/]", " ");
+ 
+               /* remplace tous les caractères n'appartenant pas à la chaine
+                de référence chaineOK par des underscores. */
+               for (int i=0; i<mot.length(); i++)
+               {
+                       boolean trouve = true;
+                       for (int j=0; j<chaineOK.length(); j++)
+                       {
+                               if (mot.charAt(i) == chaineOK.charAt(j))trouve = false;
+                       }
+                       if (trouve) mot = mot.replace(mot.charAt(i), '_');
+               }
+ 
+        }
+        return mot;
+        }
+ 
+        /**
+         * helloExample: not return value, only print "hello" + message.
+         * 
+         * 
+         * {talendTypes} String
+         * 
+         * {Category} User Defined
+         * 
+         * {param} string("world") input: The string need to be printed.
+         * 
+         * {example} supprCaracteres("Caractères-accentués") # Caracteres accentues !.
+         */
+            public static String supprCaracteres(String mot)
+            {
+            if (mot!= null)
+            {
+//                   String chaineOK = "azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN0123456789, ";
+     
+                   mot = mot.replaceAll("[ÀÁÂÃÄÅ]", "A");
+                   mot = mot.replace("Ç", "C");
+                   mot = mot.replaceAll("[ÈÉÊË]", "E");
+                   mot = mot.replaceAll("[ÌÍÎÏ]", "I");
+                   mot = mot.replaceAll("[ÒÓÔÕÖ]", "O");
+                   mot = mot.replaceAll("[ÙÚÛÜ]", "U");
+                   mot = mot.replace("Ý", "Y");
+                   mot = mot.replaceAll("[àáâãäå]", "a");
+                   mot = mot.replace("ç", "c");
+                   mot = mot.replaceAll("[èéêë]", "e");
+                   mot = mot.replaceAll("[ìíîï]", "i");
+                   mot = mot.replaceAll("[ðòóôõö]", "o");
+                   mot = mot.replaceAll("[ùúûü]", "u");
+                   mot = mot.replaceAll("[ýÿ]", "y");
+                   mot = mot.replace(".", "");
+                   mot = mot.replace("'", " ");
+                   mot = mot.replace(",", " ");
+                   mot = mot.replace("-", " ");
+                   mot = mot.replace("  ", " ");
+            
+                   // mot = mot.replaceAll("[_'-/]", " ");
+                   mot = mot.replaceAll(".€:?", "");
+     
+                   /* supprime tous les caractères n'appartenant pas à la chaine
+                    de référence chaineOK. */
+/*                   for (int i=0; i<mot.length(); i++)
+                   {
+                           boolean trouve = true;
+                           for (int j=0; j<chaineOK.length(); j++)
+                           {
+                                   if (mot.charAt(i) == chaineOK.charAt(j))trouve = false;
+                           }
+                           if (trouve) mot = mot.replace(mot.substring(i,i), "");
+                           i = i--;
+                   }
+*/     
+            }
+            mot = mot.toUpperCase();
+            mot = mot.replace("5 193", "5193");
+            mot = mot.replace("EST EGAL A 25%", "EST DE 25%");
+            mot = mot.replace("ET JE JUSTIFIE", "ET JUSTIFIE");
+            return mot;
+            }
+ 
+            /**
+             * helloExample: not return value, only print "hello" + message.
+             * 
+             * 
+             * {talendTypes} String
+             * 
+             * {Category} User Defined
+             * 
+             * {param} string("world") input: The string need to be printed.
+             * 
+             * {example} supprCaracteres("Caractères-accentués") # Caracteres accentues !.
+             */
+                public static String supprPourMontant(String mot)
+                {
+                if (mot!= null)
+                {
+                       String chaineOK = "0123456789,";
+         
+                       mot = mot.replace(".", ",");
+                       mot = mot.replace((char)160, ' ');
+                       mot = mot.replace(" ", "");
+                       mot = mot.replace("€", "");
+                
+                       /* supprime tous les caractères n'appartenant pas à la chaine
+                        de référence chaineOK. */
+                       for (int i=0; i<mot.length(); i++)
+                       {
+                               boolean trouve = true;
+                               for (int j=0; j<chaineOK.length(); j++)
+                               {
+                                       if (mot.charAt(i) == chaineOK.charAt(j))trouve = false;
+                               }
+                               if (trouve) mot = mot.replace(mot.substring(i,i), "");
+                               i = i--;
+                       }     
+                }
+                mot = mot.toUpperCase();
+                return mot;
+                }
+
+                /**
+                 * helloExample: not return value, only print "hello" + message.
+                 * 
+                 * 
+                 * {talendTypes} String
+                 * 
+                 * {Category} User Defined
+                 * 
+                 * {param} string("world") input: The string need to be printed.
+                 * 
+                 * {example} supprCaracteres("Caractères-accentués") # Caracteres accentues !.
+                 */
+                    public static String supprPourMontantFr(String mot)
+                    {
+                    if (mot!= null)
+                    {
+                           String chaineOK = "0123456789,";
+             
+                           mot = mot.replace(".", "");
+                           mot = mot.replace("<", "");
+                           mot = mot.replace("H", "");
+                           mot = mot.replace(",", ".");
+                           mot = mot.replace((char)160, ' ');
+                           mot = mot.replace(" ", "");
+                           mot = mot.replace("€", "");
+                    
+                           /* supprime tous les caractères n'appartenant pas à la chaine
+                            de référence chaineOK. */
+                           for (int i=0; i<mot.length(); i++)
+                           {
+                                   boolean trouve = true;
+                                   for (int j=0; j<chaineOK.length(); j++)
+                                   {
+                                           if (mot.charAt(i) == chaineOK.charAt(j))trouve = false;
+                                   }
+                                   if (trouve) mot = mot.replace(mot.substring(i,i), "");
+                                   i = i--;
+                           }     
+                    }
+                    mot = mot.toUpperCase();
+                    return mot;
+                    }
+
+}
