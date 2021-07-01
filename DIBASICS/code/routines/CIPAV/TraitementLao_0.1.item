@@ -1,0 +1,224 @@
+package routines;
+
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.sql.Blob;
+import java.sql.SQLException;
+
+import routines.system.JSONObject;
+
+//import com.fasterxml.jackson.databind.ObjectMapper;
+import com.gb.tosca.common.bpm.BpmObjectCto;
+import com.gb.tosca.common.bpm.BpmObjectEto;
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class TraitementLao {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     * @throws Exception 
+     * @throws SQLException 
+     */
+    public static Object getJson(Object data){
+    	try{   	
+    	Object object = deserialize(((Blob)data).getBinaryStream());    	
+    	BpmObjectCto cto = (BpmObjectCto)object;
+		BpmObjectEto eto = cto.getBpmObjectEto();		
+		JSONObject j= new JSONObject(eto.getData().toString());		
+        return j.toString();
+    	}catch(Exception e){
+    		return "";
+    	}
+    }
+    
+    public static String getProcessInstanceId(Object data){
+    	try{
+
+        	Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+        	return cto.getProcessInstanceId();
+        	}catch(Exception e){
+        		return "";
+        	}
+    }
+    
+    public static String getObjectEtat(Object data){
+    	try{
+
+        	Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+        	return cto.getObjectEtat()+"";
+        	}catch(Exception e){
+        		return "";
+        	}
+    }
+    
+    public static String getListRegimes(Object data){
+    	try{
+    		Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+    		String listRegimes= cto.getListRegimes();      	
+        	if(listRegimes==null){
+        		return "null";
+        	}else{
+        		return cto.getListRegimes();
+        	}
+        	
+        	}catch(Exception e){
+        		return "null";
+        	}
+    }
+    
+    public static String getNameProcess(Object data){
+    	try{
+
+        	Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+        	String nameProcess=cto.getNameProcess();
+        	if(nameProcess==null){
+        		return "null";
+        	}else{
+        		return cto.getNameProcess();
+        	}
+        	
+        	}catch(Exception e){
+        		return "null";
+        	}
+    }
+    
+    public static String getId(Object data){
+    	try{
+
+        	Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+        	BpmObjectEto eto = cto.getBpmObjectEto();
+        	return eto.getId()+"";
+        	}catch(Exception e){
+        		return "";
+        	}
+    }
+    
+    public static String getLastName(Object data){
+    	try{
+
+        	Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+        	BpmObjectEto eto = cto.getBpmObjectEto();
+        	String lastName=eto.getLastName();
+        	if(lastName==null){
+        		return "null";
+        	}else{
+        		return eto.getLastName();
+        	}
+        	
+        	}catch(Exception e){
+        		return "null";
+        	}
+    }
+    
+    public static String getFirstName(Object data){
+    	try{
+
+        	Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+        	BpmObjectEto eto = cto.getBpmObjectEto();
+        	String firstName=eto.getFirstName();
+        	if(firstName==null){
+        		return "null";
+        	}else{
+        		return eto.getFirstName();
+        	}
+        	
+        	}catch(Exception e){
+        		return "null";
+        	}
+    }
+    
+    public static String getNumMember(Object data){
+    	try{
+
+        	Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+        	BpmObjectEto eto = cto.getBpmObjectEto();
+        	String numMember=eto.getNumMember();
+        	if(numMember==null){
+        		return "null";
+        	}else{
+        		return eto.getNumMember();
+        	}
+        	}catch(Exception e){
+        		return "null";
+        	}
+    }
+    
+    public static String getComment(Object data){
+    	try{
+
+        	Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+        	BpmObjectEto eto = cto.getBpmObjectEto();
+        	String comment=eto.getComment();
+        	if(comment==null){
+        		return "null";
+        	}else{
+        		return eto.getComment();
+        	}
+        	
+        	}catch(Exception e){
+        		return "null";
+        	}
+    }
+    
+    public static String getDueDate(Object data){
+    	try{
+
+        	Object object = deserialize(((Blob)data).getBinaryStream());    	
+        	BpmObjectCto cto = (BpmObjectCto)object;
+        	BpmObjectEto eto = cto.getBpmObjectEto();
+        	String dueDate=eto.getComment();
+        	if(dueDate==null){
+        		return "null";
+        	}else{
+        		return eto.getComment();
+        	}
+        	
+        	}catch(Exception e){
+        		return "null";
+        	}
+    }
+    
+    private static Object deserialize(InputStream stream) {
+    	ObjectInputStream ois;
+    	try {
+        ois = new ObjectInputStream(stream);
+        	return ois.readObject();
+    	}catch(Exception e){
+    		return null;    		
+        } 
+    }
+}
