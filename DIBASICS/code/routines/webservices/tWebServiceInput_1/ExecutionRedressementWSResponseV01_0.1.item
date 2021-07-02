@@ -1,0 +1,231 @@
+/**
+ * ExecutionRedressementWSResponseV01.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package routines;
+
+public class ExecutionRedressementWSResponseV01  implements java.io.Serializable {
+    private java.lang.Integer nombreATraiter;
+
+    private java.lang.Integer nombreEchecsFonctionnels;
+
+    private java.lang.Integer nombreErreurs;
+
+    private java.lang.Integer nombreTraites;
+
+    public ExecutionRedressementWSResponseV01() {
+    }
+
+    public ExecutionRedressementWSResponseV01(
+           java.lang.Integer nombreATraiter,
+           java.lang.Integer nombreEchecsFonctionnels,
+           java.lang.Integer nombreErreurs,
+           java.lang.Integer nombreTraites) {
+           this.nombreATraiter = nombreATraiter;
+           this.nombreEchecsFonctionnels = nombreEchecsFonctionnels;
+           this.nombreErreurs = nombreErreurs;
+           this.nombreTraites = nombreTraites;
+    }
+
+
+    /**
+     * Gets the nombreATraiter value for this ExecutionRedressementWSResponseV01.
+     * 
+     * @return nombreATraiter
+     */
+    public java.lang.Integer getNombreATraiter() {
+        return nombreATraiter;
+    }
+
+
+    /**
+     * Sets the nombreATraiter value for this ExecutionRedressementWSResponseV01.
+     * 
+     * @param nombreATraiter
+     */
+    public void setNombreATraiter(java.lang.Integer nombreATraiter) {
+        this.nombreATraiter = nombreATraiter;
+    }
+
+
+    /**
+     * Gets the nombreEchecsFonctionnels value for this ExecutionRedressementWSResponseV01.
+     * 
+     * @return nombreEchecsFonctionnels
+     */
+    public java.lang.Integer getNombreEchecsFonctionnels() {
+        return nombreEchecsFonctionnels;
+    }
+
+
+    /**
+     * Sets the nombreEchecsFonctionnels value for this ExecutionRedressementWSResponseV01.
+     * 
+     * @param nombreEchecsFonctionnels
+     */
+    public void setNombreEchecsFonctionnels(java.lang.Integer nombreEchecsFonctionnels) {
+        this.nombreEchecsFonctionnels = nombreEchecsFonctionnels;
+    }
+
+
+    /**
+     * Gets the nombreErreurs value for this ExecutionRedressementWSResponseV01.
+     * 
+     * @return nombreErreurs
+     */
+    public java.lang.Integer getNombreErreurs() {
+        return nombreErreurs;
+    }
+
+
+    /**
+     * Sets the nombreErreurs value for this ExecutionRedressementWSResponseV01.
+     * 
+     * @param nombreErreurs
+     */
+    public void setNombreErreurs(java.lang.Integer nombreErreurs) {
+        this.nombreErreurs = nombreErreurs;
+    }
+
+
+    /**
+     * Gets the nombreTraites value for this ExecutionRedressementWSResponseV01.
+     * 
+     * @return nombreTraites
+     */
+    public java.lang.Integer getNombreTraites() {
+        return nombreTraites;
+    }
+
+
+    /**
+     * Sets the nombreTraites value for this ExecutionRedressementWSResponseV01.
+     * 
+     * @param nombreTraites
+     */
+    public void setNombreTraites(java.lang.Integer nombreTraites) {
+        this.nombreTraites = nombreTraites;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof ExecutionRedressementWSResponseV01)) return false;
+        ExecutionRedressementWSResponseV01 other = (ExecutionRedressementWSResponseV01) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.nombreATraiter==null && other.getNombreATraiter()==null) || 
+             (this.nombreATraiter!=null &&
+              this.nombreATraiter.equals(other.getNombreATraiter()))) &&
+            ((this.nombreEchecsFonctionnels==null && other.getNombreEchecsFonctionnels()==null) || 
+             (this.nombreEchecsFonctionnels!=null &&
+              this.nombreEchecsFonctionnels.equals(other.getNombreEchecsFonctionnels()))) &&
+            ((this.nombreErreurs==null && other.getNombreErreurs()==null) || 
+             (this.nombreErreurs!=null &&
+              this.nombreErreurs.equals(other.getNombreErreurs()))) &&
+            ((this.nombreTraites==null && other.getNombreTraites()==null) || 
+             (this.nombreTraites!=null &&
+              this.nombreTraites.equals(other.getNombreTraites())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getNombreATraiter() != null) {
+            _hashCode += getNombreATraiter().hashCode();
+        }
+        if (getNombreEchecsFonctionnels() != null) {
+            _hashCode += getNombreEchecsFonctionnels().hashCode();
+        }
+        if (getNombreErreurs() != null) {
+            _hashCode += getNombreErreurs().hashCode();
+        }
+        if (getNombreTraites() != null) {
+            _hashCode += getNombreTraites().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(ExecutionRedressementWSResponseV01.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://definition.webservice.donqi.cipav.com/", "executionRedressementWSResponseV01"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nombreATraiter");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "nombreATraiter"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nombreEchecsFonctionnels");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "nombreEchecsFonctionnels"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nombreErreurs");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "nombreErreurs"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("nombreTraites");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "nombreTraites"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

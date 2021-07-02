@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_d3Eg4JUmEeqkkaR1H3GSEw" xmi:version="2.0">
+  <contextParameter comment="" name="Ctx_Rep_Racine_Eloquant" prompt="Ctx_Rep_Racine_Eloquant?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="/Production/Echange/Eloquant/" xmi:id="_d3Eg4ZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Import" prompt="Ctx_Rep_Import?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Import/" xmi:id="_d3Eg4pUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Export" prompt="Ctx_Rep_Export?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Export/" xmi:id="_d3Eg45UmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Log" prompt="Ctx_Rep_Log?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Log/" xmi:id="_d3Eg5JUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Temp" prompt="Ctx_Rep_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Temp/" xmi:id="_d3Eg5ZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Schema" prompt="Ctx_Rep_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Schema/" xmi:id="_d3Eg5pUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Shell" prompt="Ctx_Rep_Shell?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Shell/" xmi:id="_d3Eg55UmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Archive" prompt="Ctx_Rep_Archive?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Archive/" xmi:id="_d3Eg6JUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Rejet" prompt="Ctx_Rep_Rejet?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Rejet/" xmi:id="_d3Eg6ZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Polyvalence" prompt="Ctx_Rep_Racine_Polyvalence?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Polyvalence/" xmi:id="_d3Eg6pUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_SI_Carriere" prompt="Ctx_Rep_Racine_SI_Carriere?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/SICarriere/" xmi:id="_d3Eg65UmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_LAO" prompt="Ctx_Rep_Racine_LAO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Lao/" xmi:id="_d3Eg7JUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Usine_Editique" prompt="Ctx_Rep_Racine_Usine_Editique?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/UE/" xmi:id="_d3Eg7ZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Contentieux" prompt="Ctx_Rep_Racine_Contentieux?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Contentieux/" xmi:id="_d3Eg7pUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Deploiement" prompt="Ctx_Rep_Racine_Deploiement?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Deploiement/" xmi:id="_d3Eg75UmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Report" prompt="Ctx_Rep_Racine_Report?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Report/" xmi:id="_d3Eg8JUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Paiement" prompt="Ctx_Rep_Racine_Paiement?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Paiement/" xmi:id="_d3Eg8ZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Compta" prompt="Ctx_Rep_Racine_Compta?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Compta/" xmi:id="_d3Eg8pUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Affiliation" prompt="Ctx_Rep_Racine_Affiliation?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Affiliation/" xmi:id="_d3Eg85UmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_TFA" prompt="Ctx_Rep_Racine_TFA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/TFA/" xmi:id="_d3Eg9JUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Encaissement" prompt="Ctx_Rep_Racine_Encaissement?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Encaissement/" xmi:id="_d3Eg9ZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Routage" prompt="Ctx_Rep_Racine_Routage?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Routage/" xmi:id="_d3Eg9pUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Proxy" prompt="Ctx_Rep_Racine_Proxy?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Proxy/" xmi:id="_d3Eg95UmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_InterfacesCompta" prompt="Ctx_Rep_Racine_InterfacesCompta?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/InterfacesCompta/" xmi:id="_d3Eg-JUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Lookup" prompt="Ctx_Rep_Lookup?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Lookup/" xmi:id="_d3Eg-ZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Sequence" prompt="Ctx_Rep_Sequence?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Sequence/" xmi:id="_d3Eg-pUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_DEMANDE" prompt="Ctx_Rep_Racine_DEMANDE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Demande/" xmi:id="_d3Eg-5UmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine" prompt="Ctx_Rep_Racine?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/" xmi:id="_d3Eg_JUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Chargement_Portail" prompt="Ctx_Rep_Racine_Chargement_Portail?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/ChargementPortail/" xmi:id="_d3Eg_ZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Mailing" prompt="Ctx_Rep_Racine_Mailing?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Mailing/" xmi:id="_d3Eg_pUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_PayTweak" prompt="Ctx_Rep_Racine_PayTweak?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/PayTweak/" xmi:id="_d3Eg_5UmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Aladin" prompt="Ctx_Rep_Racine_Aladin?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Aladin/" xmi:id="_d3EhAJUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Acacia" prompt="Ctx_Rep_Racine_Acacia?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Acacia/" xmi:id="_d3EhAZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_InterfacesAR" prompt="Ctx_Rep_Racine_InterfacesAR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/InterfacesCompta/InterfacesAR/" xmi:id="_d3EhApUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Bdoc" prompt="Ctx_Rep_Racine_Bdoc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Bdoc/" xmi:id="_d3EhA5UmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Carriere" prompt="Ctx_Rep_Racine_Carriere?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Carriere/" xmi:id="_d3EhBJUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Radiation" prompt="Ctx_Rep_Racine_Radiation?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Radiation/" xmi:id="_d3EhBZUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Commun" prompt="Ctx_Rep_Racine_Commun?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Commun/" xmi:id="_d3EhBpUmEeqkkaR1H3GSEw"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Interpeteur_Comptable" prompt="Ctx_Rep_Racine_Interpeteur_Comptable?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/InterpreteurComptable/" xmi:id="_7leyEAMlEeuFkN_RH63B7w"/>
+  <contextParameter comment="" name="Ctx_Rep_Racine_Ged" prompt="Ctx_Rep_Racine_Ged?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Production/Echange/Ged/" xmi:id="_n_65kH2sEeuLq92AoBwUkQ"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_50c9959a-8369-4e05-87a0-bb60a0719c84"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>loo/xfzwCnF0FD4cRNQg70MSvOmcIBoQNztHzu8H24Twj9ewNbIS8dxF8f1bT+jG9NsrCUoknRQ0
+rkIZQhyI0w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_29301ef8-ef59-4cb9-a7f2-cbd2c2520eab"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H7RVraBW167ECBf4vE0pLhMXPABVtyz3g6NWBx9elHyz3zdPeVXIaHcwESj1ycKKTYRl1pOmcqjB
+uovD7HkCPQ==</DigestValue></Reference></SignedInfo><SignatureValue>OeNI8WapIi1p1+mDiGEaWV+FdLlESww94BKo9d2SYStnTQpn4LDVDBAqZTJPAc8b1uriKjm5+FjP
+40R4cCSShJmdOt8GXP0oXsABOxtbTElQZm1Nffrx2dD09KN9QLY8O+PqUwm/2CliOIetAkfdGcfD
+dy9EpC0UhEjzSnt2rPH4UItlAm7bMujJ8Z4wwAeGJJ56TtoAV45TBgJPnptacinWgpmJS/FnBwiQ
+1kLxeACGKyVAlHsEr4bIMb3MoquF+hwljLlRlNEiaH5G1t/uV+1X9NelatUnOhsP1M9P8i5DBDBW
+QAextmij/a6DhFpZv9JWEhVt/alLy2B6H2pO6Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_29301ef8-ef59-4cb9-a7f2-cbd2c2520eab" Target="#_50c9959a-8369-4e05-87a0-bb60a0719c84"><Timestamp>2021-07-01 15:03:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>

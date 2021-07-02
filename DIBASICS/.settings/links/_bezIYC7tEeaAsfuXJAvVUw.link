@@ -1,0 +1,88 @@
+{
+  "itemId" : "_bezIYC7tEeaAsfuXJAvVUw",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_liP3sGr5Eeezu6jBqsUVSQ",
+    "parameterList" : [ {
+      "id" : "_HzJ5Z6_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_Encoding"
+    }, {
+      "id" : "_HzJ5aa_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_FieldSeparator"
+    }, {
+      "id" : "_HzJ5Zq_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_File"
+    }, {
+      "id" : "_HzJ5aK_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_RowSeparator"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_CqTaYMkdEeenr6lCJr-8MA",
+    "parameterList" : [ {
+      "id" : "_d2hHRJUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Mail_Port"
+    }, {
+      "id" : "_d2hHQpUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Mail_Destinataire"
+    }, {
+      "id" : "_d2hHQ5UmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Mail_Server_SMTP"
+    }, {
+      "id" : "_d2hHQZUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Mail_Expediteur"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_xGIeoGboEeeDy6-3OHCzLg",
+    "parameterList" : [ {
+      "id" : "_d3Eg7JUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Rep_Racine_LAO"
+    }, {
+      "id" : "_d3Eg4pUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Rep_Import"
+    } ]
+  }, {
+    "contextName" : "PREPROD",
+    "repoId" : "_liP3sGr5Eeezu6jBqsUVSQ",
+    "parameterList" : [ {
+      "id" : "_HzJ5Yq_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_Encoding"
+    }, {
+      "id" : "_HzJ5ZK_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_FieldSeparator"
+    }, {
+      "id" : "_HzJ5Ya_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_File"
+    }, {
+      "id" : "_HzJ5Y6_jEeqBRPA5GOKwUA",
+      "name" : "Ctx_Fichier_conf_RowSeparator"
+    } ]
+  }, {
+    "contextName" : "PREPROD",
+    "repoId" : "_CqTaYMkdEeenr6lCJr-8MA",
+    "parameterList" : [ {
+      "id" : "_d2hHRJUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Mail_Port"
+    }, {
+      "id" : "_d2hHQpUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Mail_Destinataire"
+    }, {
+      "id" : "_d2hHQ5UmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Mail_Server_SMTP"
+    }, {
+      "id" : "_d2hHQZUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Mail_Expediteur"
+    } ]
+  }, {
+    "contextName" : "PREPROD",
+    "repoId" : "_xGIeoGboEeeDy6-3OHCzLg",
+    "parameterList" : [ {
+      "id" : "_d3Eg7JUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Rep_Racine_LAO"
+    }, {
+      "id" : "_d3Eg4pUmEeqkkaR1H3GSEw",
+      "name" : "Ctx_Rep_Import"
+    } ]
+  } ]
+}
