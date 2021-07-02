@@ -28,7 +28,7 @@
     <talend.pigudf.groupid>org.example.proj721.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.proj721.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8</talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -36,8 +36,8 @@
     <talend.job.name>jobtest</talend.job.name>
     <talend.job.id>_Savo8LwKEeu8Hp5UJ2a_2w</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder></talend.job.folder>
     <talend.job.framework></talend.job.framework>
+    <talend.job.folder></talend.job.folder>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
   </properties>
