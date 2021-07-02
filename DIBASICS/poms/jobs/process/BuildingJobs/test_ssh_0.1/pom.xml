@@ -3,42 +3,42 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.example.labs</groupId>
+    <groupId>org.example.dibasics</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.3.1</version>
-    <relativePath>../../../../../</relativePath>
+    <relativePath>../../../../</relativePath>
   </parent>
-  <groupId>org.example.labs.job</groupId>
-  <artifactId>RIBRAM</artifactId>
-  <version>0.1.0</version>
-  <name>LABS RIBRAM-0.1.0 (0.1,Job Designs)</name>
+  <groupId>org.example.dibasics.job</groupId>
+  <artifactId>test_ssh</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>DIBASICS test_ssh-0.1.0-SNAPSHOT (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
-    <talend.project.name.lowercase>labs</talend.project.name.lowercase>
-    <talend.job.path>labs</talend.job.path>
-    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
+    <talend.project.name.lowercase>dibasics</talend.project.name.lowercase>
+    <talend.job.path>dibasics</talend.job.path>
+    <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
-    <talend.project.name>LABS</talend.project.name>
+    <talend.project.name>DIBASICS</talend.project.name>
     <talend.product.version>7.3.1.20210318_0728-patch</talend.product.version>
-    <talend.job.finalName>ribram_0_1</talend.job.finalName>
-    <talend.pigudf.groupid>org.example.labs.pigudf</talend.pigudf.groupid>
-    <talend.routine.groupid>org.example.labs.code</talend.routine.groupid>
+    <talend.job.finalName>test_ssh_0_1</talend.job.finalName>
+    <talend.pigudf.groupid>org.example.dibasics.pigudf</talend.pigudf.groupid>
+    <talend.routine.groupid>org.example.dibasics.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>PREPROD</talend.job.context>
+    <talend.job.context>PROD</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>RIBRAM</talend.job.name>
-    <talend.job.id>_bezIYC7tEeaAsfuXJAvVUw</talend.job.id>
+    <talend.job.name>test_ssh</talend.job.name>
+    <talend.job.id>_fFMcIPZmEeqXm8N2SukM_A</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>travail_she/attente/</talend.job.folder>
+    <talend.job.folder>buildingjobs/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
+    <project.distribution-management.repository.url>${project.distributionManagement.snapshotRepository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
@@ -46,11 +46,6 @@
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
       <version>1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>activation</artifactId>
-      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
@@ -68,11 +63,6 @@
       <version>1.16.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>axis</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>3.8.1</version>
@@ -86,11 +76,6 @@
       <groupId>org.dom4j</groupId>
       <artifactId>dom4j</artifactId>
       <version>2.1.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jaxrpc</artifactId>
-      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.components.lib</groupId>
@@ -123,11 +108,6 @@
       <version>1.16.1</version>
     </dependency>
     <dependency>
-      <groupId>javax.mail</groupId>
-      <artifactId>mail</artifactId>
-      <version>1.4.7</version>
-    </dependency>
-    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.25</version>
@@ -138,12 +118,7 @@
       <version>1.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>tosca</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.labs.code</groupId>
+      <groupId>org.example.dibasics.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
     </dependency>

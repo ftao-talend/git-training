@@ -1,0 +1,64 @@
+package routines;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class Dates {
+
+    /**
+     * NiemeJourDeSemaine: Retourne le Nième jour de la semaine à partir d'une date (incluse).
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(Nieme, "Jour", "a partir de DD/MM/YYYYs") input: The string need to be printed.
+     * 
+     * {example} NiemeJourDeSemaine(3, "Lundi", "01/01/2013") # 21/01/2013
+     * @throws ParseException
+     */
+    public static String NiemeJourDeSemaine(Integer Nombre, String Jour, String Date) throws ParseException
+    {
+    	Date DateTemp = null;
+    	Integer Delai = 0 ; // Lundi
+    	
+    	Delai = ("Mardi".equals(Jour)) ? 1 : Delai ;
+    	Delai = ("Mercredi".equals(Jour)) ? 2 : Delai ;
+    	Delai = ("Jeudi".equals(Jour)) ? 3 : Delai ;
+    	Delai = ("Vendredi".equals(Jour)) ? 4 : Delai ;
+    	Delai = ("Samedi".equals(Jour)) ? 5 : Delai ;
+    	Delai = ("Dimanche".equals(Jour)) ? 6 : Delai ;
+
+    	DateTemp = new SimpleDateFormat("dd/MM/yyyy").parse(Date);
+    	GregorianCalendar cal = (GregorianCalendar) GregorianCalendar.getInstance();
+        cal.setTime(DateTemp);
+        cal.set(Calendar.DAY_OF_MONTH, Mathematical.INT(StringHandling.LEFT(Date,2)));
+        int jourSemaine = cal.get(Calendar.DAY_OF_WEEK) - Delai;
+        int decallage = (9 - jourSemaine) % 7 + 7 * (Nombre - 1);
+        cal.add(Calendar.DAY_OF_MONTH, decallage);
+
+        return new SimpleDateFormat("dd/MM/yyyy").format(cal.getTime());
+     }
+}

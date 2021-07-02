@@ -1,0 +1,235 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class ESBUtilRoutine {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    
+    public static String testData(String message) {
+        if (message.equals(null)) {
+            return "no";
+            
+        }else{
+        	return "yes";
+        }        
+    }
+    
+    
+    public static String typeRegimeFluxMiseEnPaiement(String pensionRB,String pensionRC,String montantBrutAnnuelPensionRB,String montantBrutAnnuelPensionRC) {
+    	if(montantBrutAnnuelPensionRB==null){
+    		montantBrutAnnuelPensionRB="0";
+    	}
+    	if(montantBrutAnnuelPensionRC==null){
+    		montantBrutAnnuelPensionRC="0";
+    	}   
+    	Double mbapRB= new Double(montantBrutAnnuelPensionRB);
+    	Double mbapRC= new Double(montantBrutAnnuelPensionRC);
+    	
+    	
+    	//System.out.println("pensionRB : "+pensionRB);
+      	//System.out.println("pensionRC : "+pensionRC);
+      	
+      	//System.out.println("mbapRB : "+mbapRB);
+      	//System.out.println("mbapRC : "+mbapRC);
+    	
+    	if((pensionRB!=null)&&(pensionRC!=null)){
+    		if((mbapRB.compareTo(new Double("0"))==0)&&(mbapRC.compareTo(new Double("0"))==0)){
+    			return "exit";
+    		}else if((mbapRB.compareTo(new Double("0"))==0)&&(mbapRC.compareTo(new Double("0"))!=0)){
+    			return "RC";
+    		}else if((mbapRB.compareTo(new Double("0"))!=0)&&(mbapRC.compareTo(new Double("0"))==0)){
+    			return "RB";
+    		}else{
+    			return "RBRC";
+    		}    		
+    	}else if(pensionRB!=null){
+    		if(mbapRB.compareTo(new Double("0"))==0){
+    			return "exit";
+    		}else{
+    			return "RB";
+    		}    		 
+    	}else{
+    		if(mbapRC.compareTo(new Double("0"))==0){
+    			return "exit";
+    		}else{
+    			return "RC";
+    		}    		 
+    	}
+       
+    }
+    
+    public static int nbreFichierFluxMiseEnPaiement(String pensionRB,String pensionRC,String dateRB,String dateRC,String montantBrutAnnuelPensionRB,String montantBrutAnnuelPensionRC) {
+        if (typeRegimeFluxMiseEnPaiement(pensionRB,pensionRC,montantBrutAnnuelPensionRB,montantBrutAnnuelPensionRC).equals("RBRC")) {
+        	try{
+        	 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+             Date daterb = sdf.parse(dateRB);
+             Date daterc = sdf.parse(dateRC);
+             if(daterb.compareTo(daterc)==0){
+            	 return 1;
+             }else{
+            	 return 2;
+             }
+        	}catch(Exception e){
+        		return 1;
+        	}      
+        }else{ 
+        	return 1;
+        }        
+    }
+    
+    public static String getStatutAdherent(BigDecimal nbr){    	
+    	if(nbr.compareTo(new BigDecimal("0"))==0){
+    		return "COTIS_PRESTA";
+    	}else{
+    		return "PRESTATAIRE";
+    	}
+    }
+    
+    
+    public static String getCodeParamDBRAM(){    	
+		Date date = new Date();
+		Calendar calendar = new GregorianCalendar();
+		calendar.setTime(date);
+		return "CIPAV_"+(calendar.get(Calendar.MONTH) + 1)+"_"+calendar.get(Calendar.YEAR);
+    }
+    
+
+    /**
+     * getDatePremierePaiement:  return String datePremierPaiement value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("dateEffet") input: The date dateEffet.
+     * {param} string("dateCalculPaiement") input: date dateCalculPaiement.
+     * 
+     * {example} getDatePremierePaiement(dateEffet,dateCalculPaiement,FormatDate )) # yyyy-MM-dd.
+     */   
+    
+    public  static final String getDatePremierePaiement(Date dateEffet, Date dateCalculPaiement) throws ParseException {
+    	return getDatePremierePaiement(dateEffet, dateCalculPaiement, "dd/MM/yyyy");
+    }
+	public static  String getDatePremierePaiement(Date dateEffet, Date dateCalculPaiement, String FormatDate) throws ParseException {
+		Date datePremierePaiement = null;
+		Date dateTraitement=new Date();
+		// 1
+		if(dateEffetPlusGrand(dateEffet,dateTraitement)){
+			Calendar calendar_dateEffet = new GregorianCalendar();
+			calendar_dateEffet.setTime(dateEffet);
+			if(calendar_dateEffet.get(Calendar.MONTH) + 1!=2){
+				calendar_dateEffet.set(Calendar.DAY_OF_MONTH, 30);
+				datePremierePaiement=calendar_dateEffet.getTime();
+			}else{
+				calendar_dateEffet.set(Calendar.DAY_OF_MONTH, 28);
+				datePremierePaiement=calendar_dateEffet.getTime();
+			}				
+		}else{
+			if(dateCalculPaiement==null){ // Not done yet  
+				Calendar calendar_dateEffet = new GregorianCalendar();
+				calendar_dateEffet.setTime(dateTraitement);
+				if(calendar_dateEffet.get(Calendar.MONTH) + 1!=2){
+					calendar_dateEffet.set(Calendar.DAY_OF_MONTH, 30);
+					datePremierePaiement=calendar_dateEffet.getTime();
+				}else{
+					calendar_dateEffet.set(Calendar.DAY_OF_MONTH, 28);
+					datePremierePaiement=calendar_dateEffet.getTime();
+				}
+			}else{ // Already done
+				Calendar calendar_dateEffet = new GregorianCalendar();
+				calendar_dateEffet.setTime(dateTraitement);
+				 
+				if(calendar_dateEffet.get(Calendar.MONTH) + 2!=2){
+					calendar_dateEffet.set(Calendar.DAY_OF_MONTH, 30);
+					calendar_dateEffet.set(Calendar.MONTH, calendar_dateEffet.get(Calendar.MONTH) + 1);
+					datePremierePaiement=calendar_dateEffet.getTime();
+				}else{
+					calendar_dateEffet.set(Calendar.DAY_OF_MONTH, 28);
+					calendar_dateEffet.set(Calendar.MONTH, calendar_dateEffet.get(Calendar.MONTH) + 1);
+					datePremierePaiement=calendar_dateEffet.getTime();
+				}
+			}
+			
+		}
+		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat sdf = new SimpleDateFormat(FormatDate);
+		
+		//System.out.println("datePremierePaiement : "+datePremierePaiement);
+		return sdf.format(datePremierePaiement);
+	}
+
+	public static final boolean dateEffetPlusGrand(Date dateEffet,Date dateTraitement){
+		Calendar calendar = new GregorianCalendar();
+		calendar.setTime(dateTraitement);
+		int now_month = calendar.get(Calendar.MONTH) + 1;
+		Calendar calendar_dateEffet = new GregorianCalendar();
+		calendar_dateEffet.setTime(dateEffet);
+		int dateEffet_month = calendar_dateEffet.get(Calendar.MONTH) + 1;	
+		if((dateTraitement.compareTo(dateEffet)==-1)&&(now_month!=dateEffet_month)){ // plus grand et pas le même mois
+			return true;
+		}else{			
+			return false;
+		}
+	}
+	
+	
+	
+	public static String getCodeMajorationEnfant(String codeMajEnf){  
+		if(codeMajEnf==null){
+			return "0";
+		}
+		if("0".equals(codeMajEnf)){
+			return "0";
+		}else{
+			return "1";
+		}		
+	}
+	
+	public static String getCodeVercementUnique(String codeVerUni){  
+		if(codeVerUni==null){
+			return "0";
+		}
+		if("true".equals(codeVerUni)){
+			return "1";
+		}else{
+			return "0";
+		}		
+	}
+    
+}

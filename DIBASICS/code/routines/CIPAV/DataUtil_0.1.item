@@ -1,0 +1,199 @@
+package routines;
+
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.text.StringCharacterIterator;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class DataUtil {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static String getTimeStamp() {
+    	Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+    	return timestamp.getTime()+"";
+    }
+    
+    public static String getDateDeGeneration() {
+    	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		Calendar c = Calendar.getInstance();
+		c.setTime(c.getTime());
+		c.add(Calendar.DATE, 1);  // number of days to add
+		return sdf.format(c.getTime());  // dt is now the new date
+    }
+    
+    public static String testScriptRamOutput(String msg) {
+    	if(msg.contains("ERROR")){
+    		return "ERREUR";
+    	}
+    	return "TRAITE";
+    }
+    
+    
+    public static String getCustumErrorScriptRam(String msg) {
+    	if(msg.contains("ERROR")){
+    		return msg.substring(0, 2900);
+    	}
+    	return "";
+    }
+    
+    
+    public static String getFormatedDate(String patternOut,String date) {
+    	Date d=getDateFromPatern(date);
+    	DateFormat df = new SimpleDateFormat(patternOut);
+    	return df.format(d);
+    }
+    
+    
+	public static Date getDateFromPatern(String dateIn){		
+		List<SimpleDateFormat> knownPatterns = new ArrayList<SimpleDateFormat>();
+		knownPatterns.add(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'"));
+		knownPatterns.add(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm.ss'Z'"));
+		knownPatterns.add(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss"));
+		knownPatterns.add(new SimpleDateFormat("yyyy-MM-dd' 'HH:mm:ss"));
+		knownPatterns.add(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX"));
+		knownPatterns.add(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm'Z'"));
+		knownPatterns.add(new SimpleDateFormat("yyyy-MM-dd HH:mm:ssX"));		
+		knownPatterns.add(new SimpleDateFormat("yyyy-MM-dd"));		
+		for (SimpleDateFormat pattern : knownPatterns) {
+		    try {
+		        // Take a try
+		    	Date date = pattern.parse(dateIn);
+		    	return date;
+
+		    } catch (ParseException pe) {
+		        // Loop on
+		    }
+		}		
+		return null;
+	}
+    
+	
+	 public static String testNullForJson(String data, String val) {
+	    	if(data!=null){
+	    		return data;
+	    	}else{
+	    		return val;
+	    	}
+	    }
+	 
+	 public static String testNullForJsonDate(String data) {
+	    	if(data!=null){
+	    		String dataF=getFormatedDate("yyyy-MM-dd'T'HH:mm:ss",data)+".000Z";
+	    		
+	    		return dataF;
+	    	}else{
+	    		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+	    		Calendar c = Calendar.getInstance();	    		
+	    		return sdf.format(c.getTime())+".000Z";
+	    	}
+	    }
+	       public static String testNullForJsonDate(String data, String format) {
+	    	if(data!=null){
+	    		return getFormatedDate(format,data);	    		
+	    		   
+	    	}else{
+	    		return TalendDate.formatDate(format, TalendDate.getCurrentDate());
+	    	}
+	    }
+
+	       /**
+	    	 *  echappementCaracteresSpeciauxJSON: nettoyage des caracteres non autorisés et  SpeciauxJSON : return a string
+	    	 * 
+	    	  * 
+	    	  * {talendTypes} String
+	    	  * 
+	    	  *  {Category} XsilabUtile
+	    	  *  
+	    	  *  {param} string (aText)  
+	    	  *  {param} char (isLimitedAllowedChar) : Y/N
+	    	  *  
+	    	  * {example} echappementCaracteresSpeciauxJSON(aText, 'N')
+	    	
+	    	 */
+	       final static String PaternRgExAllowedChar ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789àâæçèéêëïîôœùûüÿ\\.,\\:\\(\\)'\\+-\\?€/%%!!";
+	   public static String  echappementCaracteresSpeciauxJSON(String aText, char isLimitedAllowedChar)
+	   {
+	   	if (aText==null)
+	   		return "";
+	   	  
+	   //System.out.println(aText.toString());
+	   	final StringBuilder result = new StringBuilder();
+	   	StringCharacterIterator iterator = new StringCharacterIterator(aText);
+	   	char character_cur = iterator.current();
+	   	char character_next =iterator.next();
+	   	while (character_cur != StringCharacterIterator.DONE){
+
+	   	if( character_cur == '\n' )
+	   		result.append(String.valueOf('\n'));
+	   	  
+	   	else if(character_cur == '"')
+	   		result.append(" ");
+	   	else if(character_cur == '/')
+	   		result.append("/");
+	   	else if(character_cur == '\b')
+	   		result.append(" ");
+	   	else if(character_cur == '\f')
+	   		result.append(" ");
+	   	else if(character_cur == '\r')
+	   		result.append(" ");
+	   	else if(character_cur == '\t')
+	   		result.append(" ");
+	   	else if(character_cur == '\\'  )
+	   	{
+	   // character_next = iterator.next(); 	       
+	   		if ( !(String.valueOf(character_next)).matches("[n]")) 
+	   		{
+	   			result.append("");
+	   		}
+	   		else {result.append(String.valueOf('\n')); iterator.next();}
+	   	}
+	   	else 
+	   	{
+	   //the char is not a special one.
+	   		//result.append(isAllowedChar(character_cur)?character_cur:" ");
+	   		result.append( isLimitedAllowedChar!='Y' ? character_cur : 
+	   		String.valueOf(character_cur).matches("[" + PaternRgExAllowedChar + "]") ? character_cur:" ");
+	   	}
+	   	  character_cur = character_next;
+	   	  character_next = iterator.next();
+	   	}
+	   	//System.out.println(result.toString());
+	   	return result.toString(); 
+	   }
+
+
+}
