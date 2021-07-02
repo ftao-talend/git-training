@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_fD5hEdszEeult4kOgxTpbQ" label="pro721_3" description="" language="java" technicalLabel="PRO721_3" creationDate="2021-06-09T16:56:51.031+0200" author="_fD5hEtszEeult4kOgxTpbQ" productVersion="Talend Data Fabric-7.2.1.20190620_1446" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/ftao-talend/git-training&quot;,&quot;login&quot;:&quot;ftao@talend.com&quot;,&quot;passwd&quot;:&quot;pyr1ImOrZD80SdpHb9D9Xw==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI">
+  <TalendProperties:Project xmi:id="_fD5hEdszEeult4kOgxTpbQ" label="pro721_3" description="" language="java" technicalLabel="PRO721_3" creationDate="2021-06-09T16:56:51.031+0200" author="_fD5hEtszEeult4kOgxTpbQ" productVersion="Talend Data Fabric-7.2.1.20190620_1446" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/ftao-talend/git-training&quot;,&quot;login&quot;:&quot;ftao@talend.com&quot;,&quot;passwd&quot;:&quot;pyr1ImOrZD80SdpHb9D9Xw==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <migrationTask xmi:id="_fNBn4NszEeult4kOgxTpbQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_fD5hEtszEeult4kOgxTpbQ" login="admin@company.com" firstName="admin" lastName="admin" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_iH9H8NszEeult4kOgxTpbQ" login="customer1user@company.com" firstName="customer" lastName="customer" type="DI" additionnalData="{}"/>
 </xmi:XMI>
