@@ -1,0 +1,18 @@
+package routines;
+
+
+public class protectStrings {
+
+	/**
+	 * protège les chaînes de caractère
+	 * @param champ
+	 * @return
+	 */
+    public static String protege(String champ) {
+        if (champ != null && (champ.contains(",") || champ.contains("(") || champ.contains(")"))){
+        	return "\"" + champ + "\""; 
+        }
+        else 
+        	return champ; 
+    }
+}

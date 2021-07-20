@@ -1,0 +1,115 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class ESBTransformation {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static void helloExample(String message) {
+        if (message == null) {
+            message = "World"; //$NON-NLS-1$
+        }
+        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+
+	 public  class ListesValeurs   {
+			//  = "X-Bonita-API-Token";
+			static public final String BPM_Journal_Debut = "ACONSOMMER";
+			static public final String BPM_Journal_Encours = "EN COURS";
+			static public final String BPMJ_Status_Enrichi = "ENRICHI";
+			static public final String BPMJ_Status_NoMatchMDM = "NO MATCH (MDM)"; // Mail à envoyer 
+			static public final String BPMJ_Status_BpmCree = "CREE BPM";
+			static public final String BPMJ_Status_MailEnvoye = "ENV (MAIL)"; // MAJ 20190823 "MAIL ENVOYE" Trop long pour champs "BONITABDM"."EVENEMENTMSGSEC"."STATUTEVENEMENT"
+			static public final String BPMJ_Status_MailNonEnvoye = "MAIL NON ENVOYE";
+			static public final String BPMJ_Status_ErrBPM = "ERREUR (BPM)";
+			static public final String BPMJ_Status_ErrMDM = "ERREUR (MDM)";
+			static public final String BPMJ_Status_ErrFormatMSG = "ERREUR (FormatMSG)";
+			static public final String BPMJ_Status_ErrMAIL = "ERR (MAIL)";  // MAJ 20190823 "ERREUR (MAIL)" Trop long pour champs "BONITABDM"."EVENEMENTMSGSEC"."STATUTEVENEMENT"
+			
+			////T_JOURNAL DEMANDE Pièce Jointe
+			static public final String BONITAJ_Status_DemandePJ_chargee = "PJ TRANSFEREE";
+			static public final String BONITAJ_Status_DemandePJ_err = "ERREUR TRANSFERT(PJ)";
+			
+			//T_JOURNAL BONITA
+			static public final String BONITAJ_Status_DemandeCree = "CREE(DMDE)";
+			static public final String BONITAJ_Status_ErrDemande = "ERR(DMDE)";
+			static public final String BONITAJ_Status_ErrESB = "ERR(ESB)";
+			static public final String BONITAJ_Status_EnrichiJMS = "ERR(JMS)";
+			
+			//Brique Demande statuts demande
+			static public final String DEMANDEAppli_Status_DemandeSoumise = "TRANSMISE";
+			static public final String DEMANDEAppli_Status_MessageLu = "LU";
+			static public final String DEMANDEAppli_Status_MessageNonLu = "NON_LU";
+			
+			
+			//TOSCA "Releve carriere" Operation  BONITA
+			static public final String BONITAOP_Instantiate = "instatiateTask";
+			static public final String BONITAOP_updateCaseStatusAndProcess = "updateCaseStatusAndProcess";
+			
+			//BDOC Interactive liste des actions 
+			static public final String BdocInteractive_ActionAValider = "A_VALIDER";
+			static public final String BdocInteractive_ActionValidation = "VALIDATION";
+			static public final String BdocInteractive_ActionValidationDirecte = "VALIDATION_DIRECTE";
+			static public final String BdocInteractive_ActionRejet = "REJET";
+			static public final String BdocInteractive_ActionSuppression = "SUPPRESSION";
+			
+			//TRACE FLUX ESB  
+			   // TypeFLux
+			static public final String TRACE_TypeFlux_BdocInteractive = "BdocInteractive";
+			static public final String TRACE_TypeFlux_MessagerieSecurisee = "MsgSecu";
+			   // TypeMessage
+			static public final String TRACE_TypeMessage_TaskEvenement = "TaskEvent";
+			static public final String TRACE_TypeMessage_TaskInstantiation = "TaskInstantiation";
+			  //  Appli
+			static public final String TRACE_Appli_BdocInteractive = "BdocI";
+			static public final String TRACE_Appli_Ged = "Ged";
+			static public final String TRACE_Appli_Acacia = "Acacia";
+	          
+			// STATUTS GENERICS 
+			static public final String Flow_Status_CreeBPM = "CREE(BPM)";
+			static public final String Flow_Status_ErrBPM = "ERR(BPM)";
+			
+			static public final String Flow_Status_CreeMDM = "CREE(MDM)";
+			static public final String Flow_Status_ErrMDM = "ERR(MDM)";
+			
+			static public final String Flow_Status_ErrESB = "ERR(ESB)";
+			
+			static public final String Flow_Status_CreeJMS = "CREE(JMS)";
+			static public final String Flow_Status_ErrJMS = "ERR(JMS)";
+			
+			static public final String Flow_Status_CreeAPIStockage = "CREE(STCK)";
+			static public final String Flow_Status_ErrAPIStockage = "ERR(STOCK)";
+			
+			static public final String Flow_Status_CreeGED = "CREE(GED)";
+			static public final String Flow_Status_ErrGED = "ERR(GED)";
+		}
+
+
+}

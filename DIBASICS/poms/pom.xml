@@ -11,6 +11,10 @@
   <modules>
     <module>code/beans</module>
     <module>code/routines</module>
+    <module>jobs/process/BuildingJobs/contextstr_0.1</module>
+    <module>jobs/process/BuildingJobs/printcustomers_0.1</module>
+    <module>jobs/process/BuildingJobs/test_ssh_0.1</module>
+    <module>jobs/process/Travail_SHE/attente/ribram_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
